@@ -13,7 +13,6 @@ export async function compileTSCode(inputFilePath: string) {
       resolve() as unknown as rollup.Plugin,
       _typescript({
         tsconfigOverride: { compilerOptions: { module: 'ESNext' } },
-        clean: true,
       }) as unknown as rollup.Plugin,
     ],
   });
